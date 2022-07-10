@@ -1,5 +1,5 @@
 import React from 'react'
-import { Pokemon, PokemonDetail } from '../interface'
+import {PokemonDetail} from '../interface'
 import PokemonList from './pokemonList';
 import './pokemon.css'
 import { Detail } from '../App';
