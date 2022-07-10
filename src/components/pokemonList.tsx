@@ -17,13 +17,13 @@ const PokemonList: React.FC<Props> = (props) => {
     const { name, id, image, abilities, viewDetail, setDetail } = props;
     const [isSelected, setSelected] = useState(false);
     useEffect(() => {
-        setSelected(id === viewDetail?.id)
-    }, [viewDetail])
+        setSelected(id === viewDetail?.id);
+    }, [viewDetail]);
 
     const closeDetail = () => {
         setDetail({
-            id:0,
-            isOpened:false,
+            id: 0,
+            isOpened: false,
         })
     }
 
@@ -32,7 +32,7 @@ const PokemonList: React.FC<Props> = (props) => {
             {isSelected ? (
                 <section className="pokemon-list-detailed">
                     <div className="detail-container">
-                        <p className="detail-close" onClick={closeDetail}> 
+                        <p className="detail-close" onClick={closeDetail}>
                             X
                         </p>
                         <div className="detail-infor">
